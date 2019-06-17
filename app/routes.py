@@ -1,6 +1,6 @@
 from flask import request, jsonify
-from app import app, db
-from app.models import User, PersonSchema, Activity, ActivitySchema
+from app import app
+from app.models import User, PersonSchema, Activity, ActivitySchema, db
 
 person_schema = PersonSchema()
 people_schema = PersonSchema(many=True)
